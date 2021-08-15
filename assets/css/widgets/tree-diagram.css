@@ -1,0 +1,32 @@
+.widget-container-light {
+    --text-color: #000000;
+}
+
+.widget-container-dark {
+    --text-color: #ffffff;
+}
+
+#widget-container {
+    --font-size: 1rem;
+    --input-width: 3.5rem;
+    --input-height: 1.5rem;
+}
+
+.value {
+    color: var(--text-color, #000000);
+    font-size: var(--font-size, 3rem);
+    text-align: center;
+}
+
+input.value-input {
+    font-family: Cambria, Georgia, Palatino Linotype, Bookman Old Style, serif !important;
+    background-color: transparent;
+    color: var(--text-color, #000000);
+    font-size: var(--font-size, 3rem) !important;
+    text-align: left;
+    border: 1px solid var(--text-color, #000000);
+    border-radius: 0;
+    outline: 0;
+    width: var(--input-width, 3.5rem);
+    height: var(--input-height, 1.5rem);
+}

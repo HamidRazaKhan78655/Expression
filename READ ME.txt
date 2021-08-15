@@ -1,0 +1,26 @@
+WIDGET EXPLANATION
+	Open up the html page
+	At the bottom you will see <script> 
+		runFractionMultiplicationWidget() is used to render the widget
+		
+		randomFractionMultiplicationConfig is used to set widget parameters, config has 2 parameters 
+			'container' is the ID for the <div> container which holds the widget
+			'input_type' can be 'fixed' or 'random'
+				If fixed, then use additional variables for widget inputs E.g. for fraction multiplication we have 4 additional inputs which represent the numerators and denominators of the fraction
+
+
+
+QUICK START STEPS 
+	Make a copy of fraction_multiplication.html and call it category_topic.html
+		You will put all the widgets you create on this HTML page 
+		For every widget you create 
+			Make a copy of fraction-multiplication.js 
+			Add <script src="assets/js/topic_widgets/widget_name.js"></script>
+			Follow coding guide in fraction-multiplication.js
+
+
+
+FINALLY
+	This project is in pure JavaScript, do not add any libraries without asking me first 
+	There are 150+ widgets to build which will be split between multiple developers
+		Every time you finish a set, I will provide another so the faster you are the more work you can have 

@@ -1,0 +1,100 @@
+.input-section-container-light {
+    --button-border: #ed0b4c;
+    --button-background: #ffffff;
+    --button-hover-background: #efb1b1;
+    --button-text-color: #000000;
+    --input-background-color: #ffffff;
+    --input-inner-text-color: #000000;
+    --input-label-text-color: #000000;
+}
+
+.input-section-container-dark {
+    --button-border: #d8416c;
+    --button-background: #3D3D3D;
+    --button-hover-background: #bd7777;
+    --button-text-color: #ffffff;
+    --input-background-color: #ffffff;
+    --input-inner-text-color: #000000;
+    --input-label-text-color: #ffffff;
+}
+
+.input-button-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+span.mq-editable-field {
+    background-color: var(--input-background-color, #F5F7FA);
+    color: var(--input-inner-text-color, #000000);
+    border-color: var(--input-inner-text-color, #000000);
+    font-size: 2rem;
+}
+
+span.mq-math-mode {
+    font-size: 2rem;
+}
+
+div.widget-equation-wrapper > span.mq-editable-field {
+    border-color: transparent;
+}
+
+div.widget-equation-wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    background-color: var(--input-background-color, #F5F7FA);
+    border: 1.5px solid var(--input-inner-text-color, #000000);
+}
+
+span.widget-equation-input {
+    width: 100%;
+}
+
+a.input-widget-button {
+    cursor: pointer;
+    background-color: var(--button-background, #ffffff);
+    border: 1px solid var(--button-border, #ed0b4c);
+    color: var(--button-text-color, #000000);
+    box-sizing: border-box;
+    font-family: inherit;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+
+a.input-widget-button:hover {
+    background-color: var(--button-hover-background, #efb1b1);
+}
+
+div.labelled-input-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+div > p.labelled-input-label {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--input-label-text-color, #000000);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+}
+
+div > p.labelled-input-template-text {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--input-label-text-color, #000000);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+}

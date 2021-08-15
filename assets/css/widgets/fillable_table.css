@@ -1,0 +1,62 @@
+.fillable-table-container-light {
+    --table-border: #d8416c;
+    --input-background: #F5F7FA;
+    --table-text-color: #000000;
+    --input-border-color: #000000;
+}
+
+.fillable-table-container-dark {
+    --table-border: #d8416c;
+    --input-background: #1D2126;
+    --table-text-color: #ffffff;
+    --input-border-color: #ffffff;
+}
+
+#fillable-table-container {
+    overflow-x: auto;
+}
+
+.fillable-table {
+    border: 1px solid var(--table-border, #d8416c);
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.ft-header {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--table-border, #d8416c);
+    color: var(--table-text-color, #000000);
+    font-size: 1.1rem;
+    font-family: Oswald, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+}
+
+.ft-cell {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--table-border, #d8416c);
+    color: var(--table-text-color, #000000);
+    font-weight: normal;
+    font-size: 1.0rem;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.ft-input-cell {
+    border: 1px solid var(--table-border, #d8416c);
+    padding: 0.25rem 0.25rem;
+}
+
+.ft-input-cell > .ft-input {
+    background-color: var(--input-background, #ffffff);
+    color: var(--table-text-color, #000000);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px dashed var(--input-border-color, #000000);
+    border-radius: 0;
+    outline: 0;
+    width: clamp(4rem, 6vw, 6rem);
+    height: 100%;
+    font-weight: normal;
+    font-size: 1.0rem;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
